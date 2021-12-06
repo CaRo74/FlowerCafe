@@ -143,6 +143,7 @@ header{
   position: relative;
   text-align: center;
   z-index: -1;
+  background-size: cover;
 }
 .mainvisual-inner {
   width: 290px;
@@ -189,6 +190,9 @@ header{
   float: left;
   margin-right: 10px;
 }
+.concept-img picture img{
+  width: 100%;
+}
 /* フッター */
 .footer{
   padding: 40px 61px;
@@ -200,9 +204,7 @@ header{
   display: flex;
   justify-content: space-between;
 }
-.footer-nav li {
-  /* margin-right: 30px; */
-}
+
 .footer-nav li a{
   color: #FFFFFF;
 }
@@ -210,6 +212,98 @@ header{
   color: #F9B1C0;
   font-size: 1.2rem;
 }
+/* pc */
 @media screen and (min-width: 768px){
-  
+  body{
+    font-size: 1.6rem;
+  }
+ /* レイアウト */
+  .section {
+    padding: 70px 0;
+  }
+  .section-wrapper {
+    padding: 0 165px;
+  }
+  /* ヘッダー */
+  header{
+    padding: 30px;
+    width: 100vw;
+  }
+  .header-logo{
+    width: 170px;
+  } 
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-nav-PC {
+    display: block;
+  }
+  .header-nav-PC .header-link{
+    display: flex;
+    flex-direction: row;
+  }
+  .header-nav-PC .header-link li:not(:last-child){
+    margin-right: 35px;
+  }
+  .header-nav-PC .header-link a {
+    color: #333333;
+  }
+  .header-nav-PC .header-link a:hover {
+    opacity: 0.8;
+  }
+  /* PC時にはハンバーガーメニューを閉じる */
+  .nav-button {
+    display: none;
+  }
+  /* メインビジュアル */
+  .mainvisual{
+    background-image: url(../img/bg-header_pc.jpg);
+    height: 680px;
+    background-size: cover;
+    position: relative;
+  }
+  .mainvisual-inner {
+    width: 451px;
+  }
+  .mainvisual-title {
+    font-size: 8.8rem;
+  }
+  .mainvisual-title span {
+    font-size: 6.4rem;
+  }
+  .mainvisual-subtitle {
+    font-size: 1.8rem;
+  }
+  /* コンセプト */
+  .concept-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .concept-content{
+    width: 50%;
+    margin-right: 50px;
+  }
+  .concept-img {
+    width: 50%;
+  }
+  .concept-img picture source{
+    width: 100%;
+  }
+  .page-link ul{
+    margin-bottom: 30px;
+  }
+  .profile {
+    margin-bottom: 0px;
+  }
+  /* フッター */
+  .footer{
+    padding: 50px 573px;
+  }
+  .footer-nav {
+    margin-bottom: 25px;
+  }
+  .footer-nav li a{
+    font-size: 2rem;
+  }
 }

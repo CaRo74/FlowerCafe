@@ -13,16 +13,18 @@
 </head>
 <body>
   <header class="header">
-    <h1 class="header-logo"><img src="img/logo.png" alt="logo"><a href="#"></a></h1>
-
-    <!-- <nav class="header-nav-PC">
-      <ul class="header-link">
-        <li><a href="">Home</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Access</a></li>
-        <li><a href="">Recruit</a></li>
-      </ul>
-    </nav> -->
+    <div class="header-inner">
+      <h1 class="header-logo"><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+  
+      <nav class="header-nav-PC">
+        <ul class="header-link">
+          <li><a href="#">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="access.html">Access</a></li>
+          <li><a href="recruit.html">Recruit</a></li>
+        </ul>
+      </nav>
+    </div>
     
     <nav class="header-nav-SP">
       <ul class="header-link">
@@ -32,7 +34,7 @@
         <li><a href="recruit.html">Recruit</a></li>
       </ul>
     </nav>
-    
+    <!-- SPのみハンバーガーメニュー -->
     <button type="button" id="js-button"class="nav-button">
       <span class="btn-line"></span>
     </button>
@@ -48,27 +50,35 @@
     <section class="section concept">
       <div class="section-wrapper">
         <div class="concept-inner">
-          <div class="concept-text">
-            <p>
-              あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-              またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど。
-            </p>
-          </div>
-          <div class="page-link">
-            <ul>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="access.html">Access</a></li>
-            </ul>
-          </div>
-          <div class="profile">
-            <div class="profile-img"><img src="img/profile.jpg" alt=""></div>
-            <div class="profile-text">
+          <div class="concept-content">
+            <div class="concept-text">
               <p>
-                そのころわたくしは、モリーオ市の博物局に勤めて居りました。十八等官でしたから役所のなかでも、ずうっと下の方でしたし俸給ほうきゅうもほんのわずかでしたが、受持ちが標本の採集や整理で生れ付き好きなことでしたから、わたくしは毎日ずいぶん愉快にはたらきました。殊にそのころ、モリーオ市では競馬場を植物園に拵こしらえ直すというので、その景色のいいまわりにアカシヤを植    え込んだ広い地面が、切符売場や信号所の建物のついたまま、わたくしどもの役所の方へまわって来たものですから、わたくしはすぐ宿直という名前で月賦で買った小さな蓄音器と二十枚ばかりのレコードをもって、その番小屋にひとり住むことになりました。
+                あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+                またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど。
               </p>
             </div>
+            <div class="page-link">
+              <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="access.html">Access</a></li>
+              </ul>
+            </div>
+            <div class="profile">
+              <div class="profile-img">
+                <img src="img/profile.jpg" alt=""></div>
+              <div class="profile-text">
+                <p>
+                  そのころわたくしは、モリーオ市の博物局に勤めて居りました。十八等官でしたから役所のなかでも、ずうっと下の方でしたし俸給ほうきゅうもほんのわずかでしたが、受持ちが標本の採集や整理で生れ付き好きなことでしたから、わたくしは毎日ずいぶん愉快にはたらきました。殊にそのころ、モリーオ市では競馬場を植物園に拵こしらえ直すというので、その景色のいいまわりにアカシヤを植    え込んだ広い地面が、切符売場や信号所の建物のついたまま、わたくしどもの役所の方へまわって来たものですから、わたくしはすぐ宿直という名前で月賦で買った小さな蓄音器と二十枚ばかりのレコードをもって、その番小屋にひとり住むことになりました。
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="concept-img"><img src="img/concept_sp.jpg" alt=""></div>
+          <div class="concept-img">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/concept_pc.jpg">
+              <img src="img/concept_sp.jpg" alt="">
+            </picture>
+          </div>
         </div>
       </div>
     </section> 
