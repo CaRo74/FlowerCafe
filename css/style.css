@@ -1,0 +1,134 @@
+@charset "utf-8";
+html{
+  font-size: 62.5%;
+}
+body{
+   font-size: 1.5rem;
+   font-family: 'EB Garamond','Noto Sans JP Regular','Cormorant Garamond','Allura', sans-serif;
+   color: #333;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+*{
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 0;
+}
+/* レイアウト */
+
+/* ヘッダー */
+header{
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header-logo{
+  width: 110px;
+}
+.header-logo img {
+  backface-visibility: hidden;
+}
+/* SP_topメニュー */
+.header-nav-SP {
+  position: fixed;
+  background-color: #C32D4D;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s;
+}
+.header-nav-SP.show{
+  visibility: visible;
+  opacity: 1;
+}
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.header-link li{
+  margin-bottom: 20px;
+}
+.header-link li a{
+  color: #FFFFFF;
+  font-size: 2.4rem;
+}
+/* ハンバーガーボタン */
+.nav-button {
+  width: 48px;
+  height: 48px;
+  background-color: #C32D4D;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 8px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 99;
+}
+.btn-line {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: relative;
+  transition: all .4s;
+  border-radius: 4px;
+}
+.btn-line::before,
+.btn-line::after{
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
+  left: 0;
+  transition: inherit;
+  border-radius: inherit;
+}
+.btn-line::before{
+  top: -8px;
+}
+.btn-line::after{
+  bottom: -8px;
+}
+.nav-button.active .btn-line {
+  background-color: transparent;
+}
+.nav-button.active .btn-line::before,
+.nav-button.active .btn-line::after{
+  top: 0;
+}
+.nav-button.active .btn-line::before{
+  transform: rotate(45deg);
+}
+.nav-button.active .btn-line::after{
+  transform: rotate(-45deg);
+}
+.mainvisual{
+
+}
+@media screen and (min-width: 768px){
+  
+}
