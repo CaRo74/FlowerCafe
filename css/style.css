@@ -28,9 +28,15 @@ h4,
 h5,
 h6 {
   line-height: 0;
+  font-weight: normal;
 }
 /* レイアウト */
-
+.section {
+  padding: 40px 0;
+}
+.section-wrapper {
+  padding: 0 20px;
+}
 /* ヘッダー */
 header{
   padding: 15px;
@@ -43,6 +49,9 @@ header{
 }
 .header-logo img {
   backface-visibility: hidden;
+}
+.header-nav-PC {
+  display: none;
 }
 /* SP_topメニュー */
 .header-nav-SP {
@@ -118,6 +127,7 @@ header{
 }
 .nav-button.active .btn-line::before,
 .nav-button.active .btn-line::after{
+  background-color: #FFFFFF;
   top: 0;
 }
 .nav-button.active .btn-line::before{
@@ -126,8 +136,79 @@ header{
 .nav-button.active .btn-line::after{
   transform: rotate(-45deg);
 }
+/* メインビジュアル */
 .mainvisual{
-
+  background-image: url(../img/bg-header_sp.jpg);
+  height: 360px;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+}
+.mainvisual-inner {
+  width: 290px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.mainvisual-title {
+  font-size: 4.8rem;
+  color: #C32D4D;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+.mainvisual-title span {
+  font-size: 3.2rem;
+}
+.mainvisual-subtitle {
+  font-size: 1.4rem;
+}
+/* コンセプト */
+.concept {
+  line-height: 1.8;
+}
+.concept-text {
+  margin-bottom: 22px;
+}
+.page-link ul{
+  display: flex;
+  margin-bottom: 32px;
+}
+.page-link li {
+  margin-right: 20px;
+}
+.page-link a{
+  color: #C32D4D;
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+.profile {
+  margin-bottom: 26px;
+}
+.profile-img {
+  float: left;
+  margin-right: 10px;
+}
+/* フッター */
+.footer{
+  padding: 40px 61px;
+  background-color: #C32D4D;
+  text-align: center;
+}
+.footer-nav {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav li {
+  /* margin-right: 30px; */
+}
+.footer-nav li a{
+  color: #FFFFFF;
+}
+.copylight {
+  color: #F9B1C0;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 768px){
   
