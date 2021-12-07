@@ -212,6 +212,45 @@ header{
   color: #F9B1C0;
   font-size: 1.2rem;
 }
+/* ページビジュアル */
+.page-mainvisual{
+  background-image: url(../img/bg-page-header_sp.jpg);
+  height: 160px;
+  background-size: cover;
+  z-index: -1;
+  position: relative;
+  text-align: center;
+}
+.page-inner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.page-title{
+  font-size: 3.2rem;
+  color: #C32D4D;
+  margin-bottom: 2px;
+}
+.page-subtitle{
+  font-size: 1.1rem;
+  line-height: 3.7;
+}
+/* メニュー */
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu-items li{
+  width: calc(50% - 15px);
+}
+.menu-items li:not(:last-child){
+  margin-bottom: 26px;
+}
+.menu-items li img{
+  margin-bottom: 9px;
+}
 /* pc */
 @media screen and (min-width: 768px){
   body{
