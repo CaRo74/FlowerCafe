@@ -251,6 +251,15 @@ header{
 .menu-items li img{
   margin-bottom: 9px;
 }
+.menu-title{
+  margin-bottom: 7px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.menu-price{
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
 /* pc */
 @media screen and (min-width: 768px){
   body{
@@ -344,5 +353,45 @@ header{
   }
   .footer-nav li a{
     font-size: 2rem;
+  }
+
+  /* ページビジュアル */
+  .page-mainvisual{
+    background-image: url(../img/bg-page-header_pc.jpg);
+    height: 200px;
+  }
+  .page-title{
+    font-size: 4.8rem;
+    line-height: 0.9;
+    margin-bottom: 4px;
+  }
+  .page-subtitle{
+    font-size: 1.4rem;
+    line-height: 2.9;
+  }
+  /* メニュー */
+  .menu-items {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .menu-items li{
+    width: calc((100% / 3) - 30px);
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+  .menu-items li:nth-child(3n){
+    margin-right: 0;
+  }
+  .menu-items li img{
+    margin-bottom: 9px;
+  }
+  .menu-title{
+    margin-bottom: 7px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+  .menu-price{
+    font-size: 1.2rem;
+    line-height: 1.1;
   }
 }
