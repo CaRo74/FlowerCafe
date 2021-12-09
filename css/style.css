@@ -260,6 +260,19 @@ header{
   font-size: 1.2rem;
   line-height: 1.1;
 }
+/* アクセス */
+.access-text {
+  line-height: 1.8;
+  margin-bottom: 37px;
+}
+.access{
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 23px;
+}
+.map{
+  width: 100%;
+}
 /* pc */
 @media screen and (min-width: 768px){
   body{
@@ -393,5 +406,9 @@ header{
   .menu-price{
     font-size: 1.2rem;
     line-height: 1.1;
+  }
+  /* アクセス */
+  .access-text {
+    margin-bottom: 38px;
   }
 }
