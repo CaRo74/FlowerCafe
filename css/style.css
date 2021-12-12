@@ -273,6 +273,45 @@ header{
 .map{
   width: 100%;
 }
+/* リクルート */
+.recruit-title{
+  text-align: center;
+}
+.recruit-info{
+  margin-top: 8px;
+}
+.info-table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  list-style: 1.8;
+}
+th,td{
+  width:100%;
+  display:block;
+}
+tr{
+  border-bottom: 1px solid #E2E2E2;
+}
+th{
+  padding-top: 20px;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+td{
+  padding-bottom: 20px;
+}
+.info-table li{
+  list-style: disc;
+  list-style: 6.5;
+}
+
+.info-table ul li{
+  list-style-type: circle;
+  margin-left: 30px;
+}
 /* pc */
 @media screen and (min-width: 768px){
   body{
@@ -410,5 +449,34 @@ header{
   /* アクセス */
   .access-text {
     margin-bottom: 38px;
+  }
+  /* リクルート */
+  .recruit-title{
+    font-size: 2.4rem;
+    line-height: 4;
+  }
+  .recruit-info{
+    margin-top: 60px;
+  }
+  .info-table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,td{
+    display: table;
+    padding: 0;
+    padding: 30px 10px;
+    vertical-align: top;
+  }
+  tr{
+    border-bottom: 1px solid #E2E2E2;
+  }
+  th{
+    display: table-cell;
+    width: 20%;
+  }
+  td{
+    display: table-cell;
   }
 }
